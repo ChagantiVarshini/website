@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgba(0,0,0,0.7) url('food1.jpeg') center center fixed ;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.food{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.food h1{
+      color: orangered;
+      margin-left: 10px;
+      cursor:pointer;
+      font-size: 50px;
+}
+.food1 ul li{
+    display: inline-block;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.food1 ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition:0.5s;
+   
+}
+.food1 ul li a:hover{
+    background: orangered;
+    border-radius: 15px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .content {
+    position: absolute;
+    color: white;
+    margin-top: 200px;
+    margin-left: 4%;
+    text-align: center;
+    animation: fadeIn 5s;
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+  }
+  .content span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }  
+  
+.content h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:28px;
+}
+.order_btn{
+    background-color: orangered;
+    position: relative;
+    margin-top: 70px;
+    margin-left: 47.5%;
+    width: fit-content;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.order_btn a{
+    color: white;
+    text-decoration: none;
+}
+.order_btn:hover{
+    background-color: lightsalmon;
+    transform: scale(1.04);
+}
+.icon{
+    color:orangered;
+}

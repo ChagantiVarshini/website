@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body{
+        background: rgba(0,0,0,0.7) url('foodbackgroundabout.jpg') center center fixed ;
+        background-size: cover;
+        background-blend-mode: darken;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+.content1 {
+    margin-left: 33%; 
+     animation: slide-out 2.5s ease forwards;
+}
+.content1 h1{
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 150px;
+    margin-left: 15%;
+}
+.content1 h1 span{
+    color:orangered;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content1 h3{
+    color: white;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+.content1 h3 span{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: orangered;
+}
+.container{
+    display:flex ;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.image{
+    margin-top: 150px;
+    margin-left:90px;
+    padding: 0px;
+    left: -100%;
+    float: left;
+    animation: slide-in 2s ease-in-out forwards;
+    position: absolute;
+}
+
+
+  @keyframes slide-in {
+    0% {
+      left: -100%; 
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
